@@ -1,7 +1,19 @@
-public class Hello {
+import java.util.Scanner;
 
-   public static void main(String []args){
-	System.out.println("Hello World");
-   }
+public class Factorial {
 
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = scanner.nextInt();
+    int factorial = 1;
+    for (int i = 1; i <= n; i++) {
+      factorial *= i;
+    }
+    System.out.println(factorial);
+  }
 }
+
+
+
+
+
